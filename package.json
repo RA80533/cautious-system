@@ -8,6 +8,8 @@
   },
   "scripts": {
     "lint": "true",
+    "patch": "bash ./etc/patch.sh || true",
+    "start": "bash ./etc/start.sh || true",
     "test": "true"
   },
   "engines": {
