@@ -50,6 +50,8 @@ jobs:
           YARN_CACHE_DIR: ~/.cache/yarn
       
       - name: "Apply patches"
+        run: |
+          yarn patch
   
   lint:
     
