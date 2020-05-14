@@ -1,0 +1,13 @@
+{
+  "name": "cautious-system",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url": "git+https://github.com/RA80533/cautious-system.git"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "private": true
+}
