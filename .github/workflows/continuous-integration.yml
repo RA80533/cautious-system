@@ -20,13 +20,17 @@ jobs:
       
       matrix:
         node-version: [ "12.0.0" ]
-        os: [ "ubuntu-16.04" ]
+        os: [ "ubuntu-16.04", "ubuntu-latest", "macos-latest" ]
         
         include:
           
           - experimental: true
             node-version: "14.2.0"
             os: "ubuntu-latest"
+          
+          - experimental: true
+            node-version: "14.2.0"
+            os: "macos-latest"
     
     steps:
       
@@ -67,13 +71,17 @@ jobs:
       
       matrix:
         node-version: [ "12.0.0" ]
-        os: [ "ubuntu-16.04" ]
+        os: [ "ubuntu-16.04", "ubuntu-latest", "macos-latest" ]
         
         include:
           
           - experimental: true
             node-version: "14.2.0"
             os: "ubuntu-latest"
+          
+          - experimental: true
+            node-version: "14.2.0"
+            os: "macos-latest"
     
     needs:
       - install
@@ -110,13 +118,17 @@ jobs:
       
       matrix:
         node-version: [ "12.0.0" ]
-        os: [ "ubuntu-16.04" ]
+        os: [ "ubuntu-16.04", "ubuntu-latest", "macos-latest" ]
         
         include:
           
           - experimental: true
             node-version: "14.2.0"
             os: "ubuntu-latest"
+          
+          - experimental: true
+            node-version: "14.2.0"
+            os: "macos-latest"
     
     needs:
       - install
@@ -153,13 +165,17 @@ jobs:
       
       matrix:
         node-version: [ "12.0.0" ]
-        os: [ "ubuntu-16.04" ]
+        os: [ "ubuntu-16.04", "ubuntu-latest", "macos-latest" ]
         
         include:
           
           - experimental: true
             node-version: "14.2.0"
             os: "ubuntu-latest"
+          
+          - experimental: true
+            node-version: "14.2.0"
+            os: "macos-latest"
     
     needs:
       - install
