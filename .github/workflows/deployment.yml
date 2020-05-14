@@ -1,0 +1,6 @@
+# .github/workflows/deployment.yml
+
+on:
+  
+  release:
+    types: [ created ]
