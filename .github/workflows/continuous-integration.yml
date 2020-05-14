@@ -12,8 +12,8 @@ on:
 
 jobs:
   
-  build:
-    name: "Build"
+  install:
+    name: "Install"
     runs-on: ${{ matrix.os }}
     
     strategy:
@@ -34,6 +34,16 @@ jobs:
   
   test:
     name: "Test"
+    runs-on: ${{ matrix.os }}
+    
+    strategy:
+      
+      matrix:
+        node-version: [ 12.0.0 ]
+        os: [ ubuntu-latest ]
+  
+  build:
+    name: "Build"
     runs-on: ${{ matrix.os }}
     
     strategy:
