@@ -1,5 +1,7 @@
 # .github/workflows/continuous-integration.yml
 
+name: "Continuous integration"
+
 on:
   
   push:
@@ -7,3 +9,35 @@ on:
   
   pull_request:
     branches: [ master ]
+
+jobs:
+  
+  build:
+    name: "Build"
+    runs-on: ${{ matrix.os }}
+    
+    strategy:
+      
+      matrix:
+        node-version: [ 12.0.0 ]
+        os: [ ubuntu-latest ]
+  
+  lint:
+    name: "Lint"
+    runs-on: ${{ matrix.os }}
+    
+    strategy:
+      
+      matrix:
+        node-version: [ 12.0.0 ]
+        os: [ ubuntu-latest ]
+  
+  test:
+    name: "Test"
+    runs-on: ${{ matrix.os }}
+    
+    strategy:
+      
+      matrix:
+        node-version: [ 12.0.0 ]
+        os: [ ubuntu-latest ]
