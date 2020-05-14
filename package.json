@@ -7,6 +7,8 @@
     "url": "git+https://github.com/RA80533/cautious-system.git"
   },
   "scripts": {
+    "build": "bash ./etc/build.sh || true",
+    "clean": "bash ./etc/clean.sh || true",
     "lint": "true",
     "patch": "bash ./etc/patch.sh || true",
     "start": "bash ./etc/start.sh || true",
